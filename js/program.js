@@ -14,12 +14,10 @@ process.stdin.on('readable', function() {
 
            	case '/nodev':
 			process.stdout.write('version of node' + process.versions.node);
-            process.exit(); 
             break;
 
         	case '/lang':
 			process.stdout.write('language ' + process.env.LANG);
-            process.exit(); 
             break;
 
             default:
